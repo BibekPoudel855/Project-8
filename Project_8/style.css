@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;0,6..96,900;1,6..96,400&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  /*display: inline-block;*/
+}
+ul li {
+  list-style-type: none;
+}
+i {
+  font-size: 25px;
+}
+
+.h {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  max-width: 80vw;
+  margin-inline: auto;
+}
+button{
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+/* Navbar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 19px;
+  height: 100px;
+  /* border-bottom: 1px solid black; */
+  padding: 0 10vw;
+  font-weight: 400;
+}
+.nav-img img {
+  height: 55px;
+  width: 180px;
+}
+.nav-right ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-right {
+  display: flex;
+  gap: 30px;
+}
+.nav-right ul {
+  display: flex;
+  gap: 30px;
+}
+
+.ho {
+  background: rgb(105, 102, 102);
+  height: 200px;
+  width: 150px;
+  position: absolute;
+  top: 8%;
+  right: 20%;
+  display: none;
+  z-index: 999;
+}
+.hov:hover .ho {
+  display: block;
+}
+
+/* content */
+/* first heading */
+.hero-section {
+  margin-top: 50px;
+}
+.hero-section-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 55px;
+  /* justify-content: space-evenly; */
+  /* height: 30vw; */
+  /* background: #000; */
+}
+.first-heading h1 {
+  font-size: 48px;
+  font-weight: 400;
+}
+.first-heading h1 span {
+  font-weight: 800;
+  font-size: 50px;
+}
+
+/*///// second heading ////*/
+
+.second-heading {
+  width: 83vw;
+  text-align: center;
+}
+.second-heading h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+.third-heading-button button {
+  padding: 14px 20px;
+  background: #00b6d1;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  border-radius: 8px;
+  border: none;
+}
+
+/* second section */
+
+.second-lang-sec{
+    margin: 100px 0 100px 0;
+}
+
+.logo-download-texts{
+    display: flex;
+    align-items: center;
+}
+
+.logo-download-texts h3{
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0 0 0 20px;
+}
+.logo-download-texts h3 span{
+    font-weight: 300;
+    font-size: 14.4px;
+}
+
+/*////// second section boxes grid ///////*/
+
+.lang-boxes{
+  margin-top: 50px;
+}
+.lang-cards{
+  background-color: #F9F9F9;
+}
+.lang-cards h2{
+  font-size: 20px;
+  font-weight: 700;
+}
+.blue-button{
+  padding: 8px 15px;
+  background-color: #00B6D1;
+}
+.green-button{
+  padding: 8px 15px;
+  background-color: #81C780;
+
+}
