@@ -12,9 +12,12 @@ a {
 }
 ul li {
   list-style-type: none;
+  cursor: pointer;
 }
 i {
   font-size: 25px;
+  color: black;
+  cursor: pointer;
 }
 
 .h {
@@ -29,6 +32,7 @@ button{
   color: white;
   border: none;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 body {
@@ -46,6 +50,9 @@ nav {
   /* border-bottom: 1px solid black; */
   padding: 0 10vw;
   font-weight: 400;
+}
+nav .bar{
+  display: none;
 }
 .nav-img img {
   height: 55px;
@@ -89,7 +96,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 55px;
+  gap: 40px;
   /* justify-content: space-evenly; */
   /* height: 30vw; */
   /* background: #000; */
@@ -122,11 +129,13 @@ nav {
   border-radius: 8px;
   border: none;
 }
-
+.third-heading-button button:hover{
+  background: #b9c0c1;
+}
 /* second section */
 
 .second-lang-sec{
-    margin: 100px 0 100px 0;
+    margin: 50px 0 100px 0;
 }
 
 .logo-download-texts{
@@ -151,17 +160,112 @@ nav {
 }
 .lang-cards{
   background-color: #F9F9F9;
+  text-align: center;
+  padding: 30px 0  20px 0;
 }
 .lang-cards h2{
   font-size: 20px;
   font-weight: 700;
 }
-.blue-button{
+.lang-cards h6{
+  font-weight: 300;
+  margin: 0 0 15px 0;
+}
+
+
+.blue-button{ 
   padding: 8px 15px;
+  margin: 0 10px;
   background-color: #00B6D1;
 }
 .green-button{
   padding: 8px 15px;
   background-color: #81C780;
+}
+.green-button:hover{
+  background: #99ad9c;
+}
+.blue-button:hover{
+  background: #b9c0c1;
+}
+/*//////\\\\\ grid Code\\\\\//////*/
+
+.lang-boxes{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  /* grid-template-rows: 130px 130px 130px 130px; */
+}
+
+
+
+
+
+
+
+
+
+
+/* responsive */
+
+@media (max-width:950px) {
+  .container{
+    max-width: 90vw;
+  }
+
+
+  /* navbar */
+  .nav-img img{
+    width: 130px;
+    height: 40px;
+  }
+  .nav-right ul li{
+    display: none;
+  }
+  nav .bar{
+    display: inline-block;
+    font-size: 28px;
+  }
+  nav .fa-language{
+    font-size: 5vw;
+  }
+
+  /* hero-section */
+
+  .hero-section-cont h1{
+    font-size: 11vw;
+  }
+  .hero-section-cont h1 span{
+    font-size: 12vw;
+  }
+
+  /* .hero-section button and paragraph */
+  .second-heading h3{
+    font-size: 5vw;
+  }
+  .third-heading-button button{
+    padding: 12px 18px;
+  }
+
+/* download & logo */
+
+  .logo-download-texts img{
+    height: 15vw;
+  }
+  .logo-download-texts h3{
+    font-size: 18px;
+  }
+  .logo-download-texts h3 span{
+    font-size: 12px;
+  }
+
+  /*/////// grid ////*/
+  .lang-boxes{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    /* grid-template-rows: 130px 130px 130px 130px; */
+  }
+
 
 }
