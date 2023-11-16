@@ -411,11 +411,19 @@ footer {
 
 /* responsive */
 @media (max-width: 950px) {
+  body{
+    width: 100vw;
+    /* overflow: hidden; */
+  }
   .container {
     max-width: 90vw;
+    overflow-x: hidden;
   }
 
   /* navbar */
+  nav{
+    width: 100vw;
+  }
   .nav-img img {
     width: 130px;
     height: 40px;
@@ -424,7 +432,7 @@ footer {
     display: none;
   }
   nav .bar {
-    display: inline-block;
+    display: block;
     font-size: 28px;
   }
   nav .fa-language {
@@ -472,6 +480,8 @@ footer {
   .text-email-cont{
     flex-direction: column;
   }
+
+
   /* left */
   .join-text-left{
     padding: 20px 20px;
@@ -489,6 +499,73 @@ footer {
 
   .sub-email-box{
     height: 250px;
-    width: 330px;
+    width: 90vw;
+  }
+  .sub-email-box h3{
+    font-size: 20px;
+  }
+  .sub-email-box p{
+    font-size: 15px;
+  }
+  .sub-email-box input{
+    height: 45px;
+    width: 80vw;
+  }
+  .sub-email-box button{
+    width: 80vw;
+  }
+
+
+  /*////// last section texts//////// */
+
+  .inner-exe-msi-text{
+    height: 70vh;
+  }
+
+  .inner-exe-msi-text h3{
+    padding: 10px 0 15px 0;
+  }
+
+  /*///// footer ///*/
+  footer{
+    height: 200vh;
+  }
+  /* first section lists & input box  */
+  .footer-lists-input-cont{
+    flex-direction: column;
+  }
+  .footer-lists-input-cont ul li{
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .footer-lists-input-cont h4{
+    padding: 10px 0 12px 0;
+  }
+
+  .fourth-input-email-box{
+    width: 90vw;
+    padding: 10px 0 2px 0;
+  }
+
+  .fourth-input-email-box input{
+    margin: 10px 0;
+    width: 90vw;
+  }
+  .fourth-input-email-box button{
+    margin: 8px 0;
+    width: 90vw;
+  }
+  /* footer last section logo, copyright, social links */
+  .footer-logo-social-cont{
+    overflow-y: hidden;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .left-logo-sec{
+    padding: 25px 0;
+  }
+  .left-logo-sec p{
+    font-size: 15px;
   }
 }
+
